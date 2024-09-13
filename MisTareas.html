@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>organigrama-empresas</title>
-        <meta name="keywords" content="organigrama, empresas, lista de tareas, nm">
-        <meta name="description" content="pagina de organigrama empresarial">
-    </head>
-    <body>
-        <div>
-        <header>
-            <h1>organigrama-empresas</h1>
-            <a href="index.html"><img src="Images/home icono.webp" alt="home"></a>
-            <img src="Images/usuario logo.png" alt="usuario">
-            <img src="Images/Luz verde.jfif" alt="Disponible/Ocupado">
-            <img src="Images/Imagen logo.png" alt="NM">
-            <img src="Images/icono configuración.png" alt="configuración">
+
+<head>
+    <meta charset="UTF-8">
+    <title>organigrama-empresas</title>
+    <meta name="keywords" content="organigrama, empresas, lista de tareas, nm">
+    <meta name="description" content="pagina de organigrama empresarial">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
+    <script src="javascript.js"></script>
+</head>
+
+<body class="fondo" onload="cargarls()">
+    <div class="grid-container">
+        <header class="item1">
+            <h1>Organigrama-Empresas</h1>
+            <div class="iconos">
+                <div>
+                    <a href="index.html"><img src="Images/home icono.webp" alt="home"></a>
+                    <img src="Images/usuario_logo-removebg-preview.png" alt="usuario">
+                    <img src="Images/Luz_verde-removebg-preview.png" alt="Disponible/Ocupado">
+                </div>
+                <div class="centro">
+                    <img class="logo" src="Images/Imagen logo.png" alt="NM">
+                </div>
+                <div class="derecha">
+                    <img src="Images/icono_configuración-removebg-preview.png" alt="configuración">
+                </div>
+            </div>
         </header>
-        </div>
-        <div>
-        <nav>
+        <nav class="item2">
             <ul>
-            <li><a href="index.html"><h4>Home</h4></a></li>
-            <li><a href="MisionVisionyValores.html"><h4>Misión Visión y Valores</h4></a></li>
-            <li><a href="Organigrama.html"><h4>Organigrama</h4></a></li>
-            <li><a href="MisTareas.html"><h4>Mis Tareas</h4></a></li>
-            <li><a href="Agenda.html"><h4>Agenda</h4></a></li>
-            <li><a href="MisProyectos.html"><h4>Mis Proyectos</h4></a></li>
+                <li><a href="index.html">
+                        Home
+                    </a></li>
+                <li><a href="MisionVisionyValores.html">
+                        Misión Visión y Valores
+                    </a></li>
+                <li><a href="Organigrama.html">
+                        Organigrama
+                    </a></li>
+                <li><a href="MisTareas.html">
+                        Mis Tareas
+                    </a></li>
+                <li><a href="Agenda.html">
+                        Agenda
+                    </a></li>
+                <li><a href="MisProyectos.html">
+                        Mis Proyectos
+                    </a></li>
             </ul>
         </nav>
+        <div class="item3">
+            <main>
+                <section>
+                    <h2>Mis Tareas</h2>
+                    <textarea id="MisTareas" name="MisTareas" rows="4" cols="50" onchange="guardarls()">
+                    </textarea>
+                </section>
+            </main>
         </div>
-        <div>
-        <main>
-            <section>
-                <h2>Mis Tareas</h2>
-                <ul>
-                    <li>Nullam commodo mattis nisl nec gravida.</li>
-                    <li>Donec facilisis sed tellus vitae bibendum.</li>
-                    <li>In hac habitasse platea dictumst.</li>
-                    <li>Mauris sodales neque a massa tincidunt, at laoreet tortor lobortis.</li>
-                    <li>Sed euismod laoreet tellus a consectetur.</li>
-                    <li>Cras gravida felis nisi, id feugiat leo tincidunt non.</li>
-                    <li>Etiam id urna eu nisi convallis aliquam eu at purus.</li>
-                    <li>Aliquam suscipit cursus laoreet.</li>
-                    <li>Curabitur nec odio accumsan, luctus ligula ut, ultricies odio.</li>
-                    <li>Pellentesque id felis leo.</li>
-                </ul>
-            </section>
-        </main>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>

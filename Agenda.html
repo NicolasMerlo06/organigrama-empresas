@@ -1,173 +1,332 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>organigrama-empresas</title>
-        <meta name="keywords" content="organigrama, empresas, lista de tareas, nm">
-        <meta name="description" content="pagina de organigrama empresarial">
-    </head>
-    <body>
-        <div>
-        <header>
-            <h1>organigrama-empresas</h1>
-            <a href="index.html"><img src="Images/home icono.webp" alt="home"></a>
-            <img src="Images/usuario logo.png" alt="usuario">
-            <img src="Images/Luz verde.jfif" alt="Disponible/Ocupado">
-            <img src="Images/Imagen logo.png" alt="NM">
-            <img src="Images/icono configuración.png" alt="configuración">
+
+<head>
+    <meta charset="UTF-8">
+    <title>organigrama-empresas</title>
+    <meta name="keywords" content="organigrama, empresas, lista de tareas, nm">
+    <meta name="description" content="pagina de organigrama empresarial">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
+    <script src="javascript.js"></script>
+</head>
+
+<body class="fondo" onload="cargarcalendar()">
+    <div class="grid-container">
+
+        <header class="item1">
+            <h1>Organigrama-Empresas</h1>
+            <div class="iconos">
+                <div>
+                    <a href="index.html"><img src="Images/home icono.webp" alt="home"></a>
+                    <img src="Images/usuario_logo-removebg-preview.png" alt="usuario">
+                    <img src="Images/Luz_verde-removebg-preview.png" alt="Disponible/Ocupado">
+                </div>
+                <div class="centro">
+                    <img class="logo" src="Images/Imagen logo.png" alt="NM">
+                </div>
+                <div class="derecha">
+                    <img src="Images/icono_configuración-removebg-preview.png" alt="configuración">
+                </div>
+            </div>
         </header>
-        </div>
-        <div>
-        <nav>
+        <nav class="item2">
             <ul>
-            <li><a href="index.html"><h4>Home</h4></a></li>
-            <li><a href="MisionVisionyValores.html"><h4>Misión Visión y Valores</h4></a></li>
-            <li><a href="Organigrama.html"><h4>Organigrama</h4></a></li>
-            <li><a href="MisTareas.html"><h4>Mis Tareas</h4></a></li>
-            <li><a href="Agenda.html"><h4>Agenda</h4></a></li>
-            <li><a href="MisProyectos.html"><h4>Mis Proyectos</h4></a></li>
+                <li><a href="index.html">
+                        Home
+                    </a></li>
+                <li><a href="MisionVisionyValores.html">
+                        Misión Visión y Valores
+                    </a></li>
+                <li><a href="Organigrama.html">
+                        Organigrama
+                    </a></li>
+                <li><a href="MisTareas.html">
+                        Mis Tareas
+                    </a></li>
+                <li><a href="Agenda.html">
+                        Agenda
+                    </a></li>
+                <li><a href="MisProyectos.html">
+                        Mis Proyectos
+                    </a></li>
             </ul>
         </nav>
-        </div>
-        <div>
-        <main>
-            <section>
-                <h2>Agenda</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>
-                                Lunes
-                            </th>
-                            <th>
-                                Martes
-                            </th>
-                            <th>
-                                Miércoles
-                            </th>
-                            <th>
-                                Jueves
-                            </th>
-                            <th>
-                                Viernes
-                            </th>
-                            <th>
-                                Sábado
-                            </th>
-                            <th>
-                                Domingo
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                2
-                            </td>
-                            <td>
-                                3
-                            </td>
-                            <td>
-                                4
-                            </td>
-                            <td>
-                                5
-                            </td>
-                            <td>
-                                6
-                            </td>
-                            <td>
-                                7
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                8
-                            </td>
-                            <td>
-                                9
-                            </td>
-                            <td>
-                                10
-                            </td>
-                            <td>
-                                11
-                            </td>
-                            <td>
-                                12
-                            </td>
-                            <td>
-                                13
-                            </td>
-                            <td>
-                                14
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                15
-                            </td>
-                            <td>
-                                16
-                            </td>
-                            <td>
-                                17
-                            </td>
-                            <td>
-                                18
-                            </td>
-                            <td>
-                                19
-                            </td>
-                            <td>
-                                20
-                            </td>
-                            <td>
-                                21
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                22
-                            </td>
-                            <td>
-                                23
-                            </td>
-                            <td>
-                                24
-                            </td>
-                            <td>
-                                25
-                            </td>
-                            <td>
-                                26
-                            </td>
-                            <td>
-                                27
-                            </td>
-                            <td>
-                                28
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                29
-                            </td>
-                            <td>
-                                30
-                            </td>
-                            <td>
-                                31
-                            </td>
-                        </tr>
+        <div class="item3">
+            <main>
+                <section>
+                    <h2>Agenda</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Lunes
+                                </th>
+                                <th>
+                                    Martes
+                                </th>
+                                <th>
+                                    Miércoles
+                                </th>
+                                <th>
+                                    Jueves
+                                </th>
+                                <th>
+                                    Viernes
+                                </th>
+                                <th>
+                                    Sábado
+                                </th>
+                                <th>
+                                    Domingo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                    <br>
+                                    <textarea id="dia1" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    2
+                                    <br>
 
-                    </tbody>
-                </table>
-            </section>
-        </main>
+                                    <textarea id="dia2" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    3
+                                    <br>
+
+                                    <textarea id="dia3" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    4
+                                    <br>
+
+                                    <textarea id="dia4" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    5
+                                    <br>
+
+                                    <textarea id="dia5" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    6
+                                    <br>
+
+                                    <textarea id="dia6" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    7
+                                    <br>
+
+                                    <textarea id="dia7" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    8
+                                    <br>
+
+                                    <textarea id="dia8" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    9
+                                    <br>
+
+                                    <textarea id="dia9" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    10
+                                    <br>
+
+                                    <textarea id="dia10" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    11
+                                    <br>
+
+                                    <textarea id="dia11" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    12
+                                    <br>
+
+                                    <textarea id="dia12" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    13
+                                    <br>
+
+                                    <textarea id="dia13" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    14
+                                    <br>
+
+                                    <textarea id="dia14" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    15
+                                    <br>
+
+                                    <textarea id="dia15" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    16
+                                    <br>
+
+                                    <textarea id="dia16" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    17
+                                    <br>
+
+                                    <textarea id="dia17" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    18
+                                    <br>
+
+                                    <textarea id="dia18" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    19
+                                    <br>
+
+                                    <textarea id="dia19" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    20
+                                    <br>
+
+                                    <textarea id="dia20" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    21
+                                    <br>
+
+                                    <textarea id="dia21" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    22
+                                    <br>
+
+                                    <textarea id="dia22" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    23
+                                    <br>
+
+                                    <textarea id="dia23" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    24
+                                    <br>
+
+                                    <textarea id="dia24" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    25
+                                    <br>
+
+                                    <textarea id="dia25" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    26
+                                    <br>
+
+                                    <textarea id="dia26" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    27
+                                    <br>
+
+                                    <textarea id="dia27" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    28
+                                    <br>
+
+                                    <textarea id="dia28" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    29
+                                    <br>
+
+                                    <textarea id="dia29" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    30
+                                    <br>
+
+                                    <textarea id="dia30" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                                <td>
+                                    31
+                                    <br>
+
+                                    <textarea id="dia31" name="Agenda" rows="4" cols="1" onchange="guardarcalendar()">
+                                    </textarea>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </section>
+            </main>
         </div>
-    </body>
+</body>
+
 </html>

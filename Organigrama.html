@@ -1,108 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>organigrama-empresas</title>
-        <meta name="keywords" content="organigrama, empresas, lista de tareas, nm">
-        <meta name="description" content="pagina de organigrama empresarial">
-    </head>
-    <body>
-        <div>
-        <header>
-            <h1>organigrama-empresas</h1>
-            <a href="index.html"><img src="Images/home icono.webp" alt="home"></a>
-            <img src="Images/usuario logo.png" alt="usuario">
-            <img src="Images/Luz verde.jfif" alt="Disponible/Ocupado">
-            <img src="Images/Imagen logo.png" alt="NM">
-            <img src="Images/icono configuración.png" alt="configuración">
+
+<head>
+    <meta charset="UTF-8">
+    <title>organigrama-empresas</title>
+    <meta name="keywords" content="organigrama, empresas, lista de tareas, nm">
+    <meta name="description" content="pagina de organigrama empresarial">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
+    <script src="javascript.js">
+    </script>
+</head>
+
+<body class="fondo">
+    <div class="grid-container">
+        <header class="item1">
+            <h1>Organigrama-Empresas</h1>
+            <div class="iconos">
+                <div>
+                    <a href="index.html"><img src="Images/home icono.webp" alt="home"></a>
+                    <img src="Images/usuario_logo-removebg-preview.png" alt="usuario">
+                    <img src="Images/Luz_verde-removebg-preview.png" alt="Disponible/Ocupado">
+                </div>
+                <div class="centro">
+                    <img class="logo" src="Images/Imagen logo.png" alt="NM">
+                </div>
+                <div class="derecha">
+                    <img src="Images/icono_configuración-removebg-preview.png" alt="configuración">
+                </div>
+            </div>
         </header>
-        </div>
-        <div>
-        <nav>
+        <nav class="item2">
             <ul>
-            <li><a href="index.html"><h4>Home</h4></a></li>
-            <li><a href="MisionVisionyValores.html"><h4>Misión Visión y Valores</h4></a></li>
-            <li><a href="Organigrama.html"><h4>Organigrama</h4></a></li>
-            <li><a href="MisTareas.html"><h4>Mis Tareas</h4></a></li>
-            <li><a href="Agenda.html"><h4>Agenda</h4></a></li>
-            <li><a href="MisProyectos.html"><h4>Mis Proyectos</h4></a></li>
+                <li><a href="index.html">
+                        Home
+                    </a></li>
+                <li><a href="MisionVisionyValores.html">
+                        Misión Visión y Valores
+                    </a></li>
+                <li><a href="Organigrama.html">
+                        Organigrama
+                    </a></li>
+                <li><a href="MisTareas.html">
+                        Mis Tareas
+                    </a></li>
+                <li><a href="Agenda.html">
+                        Agenda
+                    </a></li>
+                <li><a href="MisProyectos.html">
+                        Mis Proyectos
+                    </a></li>
             </ul>
         </nav>
-        </div>
-        <div>
-        <main>
-            <section>
-                <h2>Organigrama</h2>
-                <table>
-                    <thead>
-                        <tr>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                <buttom>CEO</buttom>
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Departamento 1
-                            </td>
-                            <td>
-                                Departamento 2
-                            </td>
-                            <td>
-                                Departamento 3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Trabajador 1
-                            </td>
-                            <td>
-                                Trabajador 1
-                            </td>
-                            <td>
-                                Trabajador 1
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Trabajador 2
-                            </td>
-                            <td>
-                                Trabajador 2
-                            </td>
-                            <td>
-                                Trabajador 2
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Trabajador 3
-                            </td>
-                            <td>
-                                Trabajador 3
-                            </td>
-                            <td>
-                                Trabajador 3
-                            </td>
-                        </tr>
+        <div class="item3">
+            <main>
+                <section>
+                    <h2>Organigrama</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
 
-                    </tbody>
-                </table>
-            </section>
-        </main>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('CEO','ayuda a la gente','hoa mundo')">CEO</button>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Finanzas','Info de Finanzas')">Finanzas</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Producción','Info de Producción')">Producción</button>
+                                </td>
+                                <td>
+                                    <button type="button" onclick="mostrardialog('RRHH','Info de RRHH')">RRHH</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Gerente de Finanzas','Tareas','Proyectos')">Gerente de
+                                        Finanzas</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Gerente de Producción','Tareas','Proyectos')">Gerente de
+                                        Producción</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Gerente de RRHH','Tareas','Proyectos')">Gerente de
+                                        RRHH</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 1','Tareas','Proyectos')">Trabajador
+                                        1</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 1','Tareas','Proyectos')">Trabajador
+                                        1</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 1','Tareas','Proyectos')">Trabajador
+                                        1</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 2','Tareas','Proyectos')">Trabajador
+                                        2</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 2','Tareas','Proyectos')">Trabajador
+                                        2</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 2','Tareas','Proyectos')">Trabajador
+                                        2</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 3','Tareas','Proyectos')">Trabajador
+                                        3</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 3','Tareas','Proyectos')">Trabajador
+                                        3</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        onclick="mostrardialog('Trabajador 3','Tareas','Proyectos')">Trabajador
+                                        3</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </section>
+            </main>
         </div>
-        <dialog>
-            <h3>CEO</h3>
-            <p>info del CEO</p>
+        <dialog id="modal">
+            <button type="button" onclick="cerrar()">
+                X
+            </button>
+            <h3 id="nombre"></h3>
+            <p>Tarea: <span id="tarea"></span></p>
+            <p> Proyecto: <span id="proyecto"></span></p>
         </dialog>
-    </body>
+    </div>
+</body>
+
 </html>
